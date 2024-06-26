@@ -10,6 +10,14 @@ const config = {
     adapter: adapter(),
   },
   preprocess: vitePreprocess(),
+  vitePlugin: {
+    // set to true for defaults or customize with object
+    inspector: {
+      toggleKeyCombo: "meta-shift",
+      showToggleButton: "always",
+      toggleButtonPos: "bottom-right",
+    },
+  },
 }
 
 export default config
